@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  if menu.length
+    table.listing-table.table-dark.table-striped
+      tr
+        th nom
+        th prenom
+        th pseudo
+        th email
+      each firstdb in menu
+        tr
+          td= firstdb.nom
+          td= firstdb.prenom
+          td= firstdb.pseudo
+          td= firstdb.email
+  else
+   p ( ͡ ͜ʖ ͡ ) No records yet ｡･:*:･ﾟ’★, ｡･:*:･ﾟ’☆

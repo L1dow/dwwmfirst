@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  -data = data || {}
+  if errors
+    ul.my-errors
+      for error in errors
+        li= error.msg
+  form(action="." method="POST" class="form-node-form")
+    label(for="nom") Nom:
+    input(
+      type="text"
+      id="nom"
+      name="nom"
+      class="form-control"
+      value=data.nom
+    )
+    label(for="prenom") Prénom:
+    input(
+      type="text"
+      id="prenom"
+      name="prenom"
+      class="form-control"
+      value=data.prenom
+    )
+    label(for="pseudo") Pseudo:
+    input(
+      type="text"
+      id="pseudo"
+      name="pseudo"
+      class="form-control"
+      value=data.pseudo
+    )
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      value=data.email
+    )
+    input(
+      type="submit"
+      value="Submit"
+      class="btn btn-lg btn-primary btn-block"
+    )
