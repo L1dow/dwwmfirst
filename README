@@ -1,0 +1,37 @@
+Ce fichier sera dispo pour tous . Voici les notes 
+
+Site d’inscription pour un tournois fifa
+Présentation générale
+    • Formulaire d’inscription : Pseudo / Mail / Mdp
+        ◦ Remplissage de la bdd  avec les users
+    • Tirer au sort les groupes (8 joueurs par groupes)
+        ◦ 4 groupes de 8 joueurs soit 32 joueurs au total
+    • Gestion de points 
+        ◦ 3 points si gagné
+        ◦ 1 point  si null
+        ◦ 0 point si perdu
+    • Gestion des quarts à la finale
+    • Lots, remise de prix
+    • Livre d’or pour mettre son avis sur le tournois
+Sites existants pour le BenchMark : 
+https://www.protournoi.fr/
+http://www.tournikoti.com/
+Déroulé du site
+
+Page d’accueil 
+Contient la galerie + présentation du tournois
+Bouton d’inscription / connexion (prévoir une connexion admin pour gérer les poules)
+Page 2 
+Formulaire d’inscription contenant les règles, j’accepte j’accepte pas, si oui formulaire d’inscription
+Page 3
+Accès au tableau des poules + scores
+Pour le back, tirer au sort les joueurs et créer les groupes 
+Afficher les groupes, les poules et gérer les quarts jusqu’à la finale
+Selon le score du joueur, gérer 
+Affichage du livre d’or contenant les commentaires des joueurs
+
+Coté admin
+
+Afficher la liste des joueurs, possibilité de modifier, insérer et supprimer
+Idée supplémentaire
+Gérer les scores et envoyer des notifications aux joueurs au début des matchs et envoyer les scores en fin de match.
